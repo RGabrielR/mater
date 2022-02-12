@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import './MainContent.css';
 const MainContent = ({ focusFurniture }) => {
   const tl = useRef();
   const furnitures = useRef();
@@ -38,7 +39,7 @@ const MainContent = ({ focusFurniture }) => {
         .timeline()
         .to(movingFurnitures, {
           duration: 1,
-          y: -320,
+          y: -415,
         })
         .to(
           vanishingFurniture2,

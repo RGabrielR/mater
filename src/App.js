@@ -1,16 +1,19 @@
 import React,{useState, useRef} from 'react';
 import './App.css';
-import { gsap } from "gsap";
 import Navbar from './components/Navbar';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
+import Menu from './components/Menu';
 function App() {
 const [focusFurniture, setFocusFurniture] = useState(1);
+const [menu, togleMenu] = useState(false);
   return (
    <>
-   <Navbar/>
+   
    <MainContent focusFurniture={focusFurniture}/>
    <Footer focusFurniture={focusFurniture} setFocusFurniture={setFocusFurniture}/>
+   <Menu menu={menu}/>
+   <Navbar togleMenu={togleMenu} menu={menu}/>
    </>
   );
 }

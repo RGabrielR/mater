@@ -3,135 +3,18 @@
   font-family: 'Open Sans', sans-serif;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
-.default{
-  cursor: default;
+body{
+  overflow: hidden;
 }
-.menu-display{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 2rem;
-  align-items: center;
-}
-.logo{
-  font-size: 2rem;
-}
-
-.toggle-menu{
-  border: solid rgba(0, 0, 0, 0.31) 1px;
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 0.5rem 0.75rem;
-}
-
-.toggle-menu div {
-  background-color: black;
-  height: 3px;
-}
-.line1{
-  width: 2rem;
-}
-.line2{
-  width: 1rem;
-}
-.line3{
-  width: 0.5rem;
-  align-self: end;
+.absolute-position{
+  position: absolute;
 }
 .relative-position{
   position: relative;
 }
-.MainContent-display{
-  display: flex;
-  flex-direction: row;
-}
-.furniture-info{
-  display: flex;
-  flex-direction: column;
-  padding: 0 5rem;
-  justify-content: center;
-}
-.author{
-  font-weight: 300;
-  font-size: 0.75rem;
-  margin-bottom: 0.75rem;
-  color: gray;
-}
-.title{
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-.description{
-  font-weight: 500;
-  font-style: italic;
-}
-.image-info{
-  width: 20rem;
-  padding: 0 8rem 0 5rem;
-  justify-self: center;
-}
-.product-details{
-  font-weight: 500;
-  background-color: black;
-  color: white;
-  text-align: center;
-  width: 8rem;
-  padding: 1rem;
-  position: absolute;
-  top: 40%;
-  left: 6%;
-}
 
-.footer{
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  bottom: 0;
-  height: 5rem;
-  background-color: white;
-  justify-items: end;
-  padding-left: 10rem;
-  width: 100%;
-}
-.footer div{
-  margin-right: 5rem;
-  
-}
-.number-footer{
-  font-weight: 300;
-  font-size: 0.75rem;
-  color: gray;
-}
-.title-footer{
-  font-weight: 500;
-  font-size: 1rem;
-}
-.border-top{
-  border-top: solid black 2px;
-}
-.smooth{
-  position: relative;
-  display: inline;
-}
-.smooth::after{
-  transition: all 250ms ease-in;
-  content: "";
-  position: absolute;
-  top: 0;
-  margin-top: -2px;
-  width: 100%;
-  height: 2px;
-  background: currentColor;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 250ms ease-in;
-}
-.smooth:hover::after{
-  transform: scaleX(1);
-  transform-origin: left;
+.default{
+  cursor: default;
 }
