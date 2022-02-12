@@ -1,90 +1,102 @@
-.menu-display{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem 5rem;
-    align-items: center;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    width: 80vw;
-  }
-.menu-display div{
+.menu-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 80vw;
+}
+
+.menu-display div {
   transition: all 1500ms ease-in;
 }
-  .logo{
-    font-size: 2rem;
-    font-weight: 700;
-    color: black;
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+}
+
+.on-togle-logo {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+}
+
+.togle-menu {
+  border: solid rgba(0, 0, 0, 0.31) 1px;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.5rem 0.75rem;
+  right: 5rem;
+}
+
+.togle-menu div {
+  background-color: black;
+  height: 3px;
+  transition: all 300ms ease-in;
+}
+
+.on-togle-menu {
+  border: solid white 1px;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.5rem 0.75rem;
+  right: 5rem;
+}
+
+.on-togle-menu div {
+  background-color: white;
+  height: 3px;
+  transition: all 300ms ease-in 300ms;
+}
+
+.line1 {
+  width: 2rem;
+}
+
+.line2 {
+  width: 1rem;
+}
+
+.line3 {
+  width: 0.5rem;
+  align-self: end;
+}
+
+.line1b {
+  width: 1rem;
+  transform: rotate(45deg);
+  margin-top: 0.4rem;
+}
+
+.line2b {
+  width: 1.5rem;
+  margin-left: 0.4rem;
+  transform: rotate(-45deg);
+  margin-top: -0.2rem;
+}
+
+.line3b {
+  width: 0.4rem;
+  align-self: end;
+  transform: rotate(45deg);
+  margin-right: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+
+@media (max-width: 575px) {
+  .menu-display {
+    left: -10%;
   }
-  .on-togle-logo{
-    font-size: 2rem;
-    color: white;
-    font-weight: 700;
-  }
-  
-  .togle-menu{
-    border: solid rgba(0, 0, 0, 0.31) 1px;
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 0.5rem 0.75rem;
-    right: 5rem;
-  }
-  
-  .togle-menu div {
-    background-color: black;
-    height: 3px;
-    transition: all 300ms ease-in;
-  }
-  .on-togle-menu{
-    border: solid white 1px;
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 0.5rem 0.75rem;
-    right: 5rem;
-  }
-  .on-togle-menu div {
-    background-color: white;
-    height: 3px;
-    transition: all 300ms ease-in 300ms;
-  }
-  .line1{
-    width: 2rem;
-  }
-  .line2{
-    width: 1rem;
-  }
-  .line3{
-    width: 0.5rem;
-    align-self: end;
-  }
-  .line1b{
-    width: 1rem;
-    transform: rotate(45deg);
-    margin-top: 0.4rem;
-  }
-  .line2b{
-    width: 1.5rem;
-    margin-left: 0.4rem;
-    transform: rotate(-45deg);
-    margin-top: -0.2rem;
-  }
-  .line3b{
-    width: 0.4rem;
-    align-self: end;
-    transform: rotate(45deg);
-    margin-right: 0.5rem;
-    margin-bottom: 0.3rem;
-  }
-  
-  @media(max-width: 575px) {
-    .menu-display{
-      left: -10%;
-    }
-  }
+}

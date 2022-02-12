@@ -1,23 +1,22 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import './Menu.css';
+import "./Menu.css";
 const Menu = ({ menu }) => {
-    const tl = useRef();
-    const AllComponent = useRef();
-    const SideMenuContent = useRef();
-    const SideMenuFooter = useRef();
+  const tl = useRef();
+  const AllComponent = useRef();
+  const SideMenuContent = useRef();
+  const SideMenuFooter = useRef();
   const Furniture = useRef();
   const SubMenues = useRef();
-    
 
   useEffect(() => {
-      gsap.set(SideMenuFooter.current, {y: -100, opacity: 0});
+    gsap.set(SideMenuFooter.current, { y: -100, opacity: 0 });
     tl.current = gsap
       .timeline({ paused: true })
-      .to(AllComponent.current, 1, { x: '-95.6%' })
-      .to(SideMenuContent.current, {duration: 1, y: 0, opacity: 1})
-      .to(SideMenuFooter.current, { duration:1, y: 0, opacity: 1}, "-=1")
-    
+      .to(AllComponent.current, 1, { x: "-95.6%" })
+      .to(SideMenuContent.current, { duration: 1, y: 0, opacity: 1 })
+      .to(SideMenuFooter.current, { duration: 1, y: 0, opacity: 1 }, "-=1");
+
     SubMenues.current = gsap.to(SubMenues.current, 1, {
       opacity: 1,
       display: "block",
