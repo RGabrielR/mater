@@ -39,7 +39,7 @@ const MainContent = ({ focusFurniture }) => {
         .timeline()
         .to(movingFurnitures, {
           duration: 1,
-          y: -415,
+          y: '-55%',
         })
         .to(
           vanishingFurniture2,

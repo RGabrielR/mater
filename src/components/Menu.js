@@ -14,7 +14,7 @@ const Menu = ({ menu }) => {
       gsap.set(SideMenuFooter.current, {y: -100, opacity: 0});
     tl.current = gsap
       .timeline({ paused: true })
-      .to(AllComponent.current, 1, { x: -1400 })
+      .to(AllComponent.current, 1, { x: '-95.6%' })
       .to(SideMenuContent.current, {duration: 1, y: 0, opacity: 1})
       .to(SideMenuFooter.current, { duration:1, y: 0, opacity: 1}, "-=1")
     

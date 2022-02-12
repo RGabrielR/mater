@@ -1,44 +1,80 @@
-.MainContent-display{
-    display: flex;
-    flex-direction: row;
-    margin-top: 6rem;
+.relative-position {
+  position: relative;
+}
+
+.MainContent-display {
+  display: flex;
+  flex-direction: row;
+  margin-top: 6rem;
+}
+.furniture-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem;
+  justify-content: center;
+}
+.author {
+  font-weight: 300;
+  font-size: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: gray;
+}
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.description {
+  font-weight: 500;
+  font-style: italic;
+}
+.image-info {
+  width: 20rem;
+  padding: 0 8rem 0 5rem;
+  justify-self: center;
+}
+.product-details {
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 8rem;
+  padding: 1rem;
+  position: absolute;
+  top: 40%;
+  left: 6%;
+}
+
+@media (max-width: 875px) {
+  .MainContent-display {
+    flex-direction: column-reverse;
+    align-items: center;
   }
-  .furniture-info{
-    display: flex;
-    flex-direction: column;
-    padding: 0 5rem;
-    justify-content: center;
+
+  .product-details {
+    top: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0.5rem;
   }
-  .author{
-    font-weight: 300;
+  .author {
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+  .title {
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+  .description {
+    text-align: center;
     font-size: 0.75rem;
-    margin-bottom: 0.75rem;
-    color: gray;
-  }
-  .title{
-    font-weight: 700;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  .description{
-    font-weight: 500;
-    font-style: italic;
+    width: 90vw;
+    margin-bottom: 0.4rem;
   }
   .image-info{
-    width: 20rem;
-    padding: 0 8rem 0 5rem;
-    justify-self: center;
+    padding-left: 35%;
   }
-  .product-details{
-    font-weight: 500;
-    background-color: black;
-    color: white;
-    text-align: center;
-    width: 8rem;
-    padding: 1rem;
-    position: absolute;
-    top: 40%;
-    left: 6%;
-  }
-  
-  
+}

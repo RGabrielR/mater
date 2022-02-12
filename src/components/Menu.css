@@ -67,6 +67,7 @@
     grid-template-columns: repeat(3, 4rem);
     position: absolute;
     bottom: 10%;
+    margin-left: 1.6rem;
   }
   .side-menu-footer h1{
     color: rgba(106, 106, 106, 1);
@@ -76,4 +77,10 @@
   }
   .side-menu-footer h1:hover{
     color: white;
+  }
+
+  @media (max-width: 565px){
+    .image-side-menu{
+      width: 12rem;
+    }
   }
