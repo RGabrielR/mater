@@ -11,8 +11,10 @@ const Menu = ({ menu }) => {
 
   useEffect(() => {
     gsap.set(SideMenuFooter.current, { y: -100, opacity: 0 });
+    gsap.set(AllComponent.current, {display: 'none'})
     tl.current = gsap
       .timeline({ paused: true })
+      .to(AllComponent.current, 0, {display: 'block'})
       .to(AllComponent.current, 1, { x: "-95.6%" })
       .to(SideMenuContent.current, { duration: 1, y: 0, opacity: 1 })
       .to(SideMenuFooter.current, { duration: 1, y: 0, opacity: 1 }, "-=1");

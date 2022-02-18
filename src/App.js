@@ -9,7 +9,6 @@ const [focusFurniture, setFocusFurniture] = useState(1);
 const [menu, togleMenu] = useState(false);
   return (
    <>
-   
    <MainContent focusFurniture={focusFurniture}/>
    <Footer focusFurniture={focusFurniture} setFocusFurniture={setFocusFurniture}/>
    <Menu menu={menu}/>
